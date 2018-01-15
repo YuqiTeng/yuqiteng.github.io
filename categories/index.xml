@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on A Peanut.</title>
+    <title>A Peanut.</title>
     <link>https://yuqiteng.github.io/categories/</link>
-    <description>Recent content in Categories on A Peanut.</description>
+    <description>Recent content on A Peanut.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 15 Jan 2018 18:01:56 +0900</lastBuildDate>
@@ -12,17 +12,16 @@
     
     
     <item>
-      <title></title>
-      <link>https://yuqiteng.github.io/categories/</link>
+      <title>Moving to New Platform</title>
+      <link>https://yuqiteng.github.io/posts/moving-to-new-platform/</link>
       <pubDate>Mon, 15 Jan 2018 18:01:56 +0900</pubDate>
       
-      <guid>https://yuqiteng.github.io/categories/</guid>
-      <description></description>
+      <guid>https://yuqiteng.github.io/posts/moving-to-new-platform/</guid>
+      <description>Again Hugo.</description>
     </item>
     
-    <item>
-      <title>Test</title>
-      <link>https://yuqiteng.github.io/categories/test/</link>
+  </channel>
+</rss>iteng.github.io/categories/test/</link>
       <pubDate>Mon, 15 Jan 2018 17:36:48 +0900</pubDate>
       
       <guid>https://yuqiteng.github.io/categories/test/</guid>
