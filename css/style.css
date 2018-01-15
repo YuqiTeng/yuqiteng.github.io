@@ -507,7 +507,8 @@ Post List
     float: right;
     position: relative;
     top: 1px;
-    font: 400 17px/1.8 "Helvetica Neue", helvetica, Arial, sans-serif;
+    
+    font: 300 16px/1.8 "Helvetica Neue", helvetica, Arial, sans-serif;
     color: #bbb;
 }
 
