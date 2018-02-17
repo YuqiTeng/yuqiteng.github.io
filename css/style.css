@@ -183,14 +183,14 @@ nav.main-nav a {
     top: 8px;
     right: 6px;
     padding: 8px 12px;
-    color: #5badf0;
+    color: #4fc08d;
     font-size: 12px;
     line-height: 1.35;
     border-radius: 3px;
 }
 
 nav.main-nav a.cta {
-    background: #5badf0;
+    background: #4fc08d;
     color: #fff;
     margin-left: 12px;
 }
