@@ -116,7 +116,7 @@ html, body {
 }
 
 body {
-    font: 14px/1 "Monda", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 14px/1 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #666;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -166,7 +166,7 @@ h2 {
     font-weight: 300;
     color: #5badf0;
     margin-top: 10px;
-    font-family: 'Monda', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-style: normal;
 }
 
@@ -323,7 +323,7 @@ em, i {
 }
 
 .home h2 {
-    font: italic 19px/1.3em "Monda", Georgia, serif;
+    font: italic 19px/1.3em -apple-system, "Helvetica Neue", Georgia, serif;
     color: #bbb;
 }
 
@@ -335,18 +335,18 @@ em, i {
     margin-top: 40px;
     margin-bottom: 20px;
     color: #222;
-    font: 300 32px/1.4em "Monda", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 300 32px/1.4em -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .post h2 {
     margin-top: 20px;
     margin-bottom: 10px;
-    font: 300 24px/1.5 "Monda", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 300 24px/1.5 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #111;
 }
 
 .post h2.headline {
-    font: normal 13px/1.5em "Monda", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: normal 13px/1.5em -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: -5px 0 0 0;
     color: #b2b9be;
     font-size: 13px;
@@ -355,7 +355,7 @@ em, i {
 }
 
 .post h2.headline .tags {
-    font: normal 13px/1.5em "Monda", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: normal 13px/1.5em -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: -5px 0 40px 0;
     color: #b2b9be;
     font-size: 13px;
@@ -366,7 +366,7 @@ em, i {
 }
 
 #post-list h2 {
-    font: normal 14px/1.5em "Monda", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: normal 14px/1.5em -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #aaa;
     margin-top: 2px;
 }
@@ -500,7 +500,7 @@ Post List
 #post-list a {
     color: #333;
     display: block;
-    font: bold 19px/1.7 "Monda", "Helvetica Neue", helvetica, Arial, sans-serif;
+    font: bold 19px/1.7 -apple-system, "Helvetica Neue", helvetica, Arial, sans-serif;
 }
 
 #post-list .dates {
@@ -508,7 +508,7 @@ Post List
     position: relative;
     top: 1px;
     
-    font: 300 16px/1.8 "Helvetica Neue", helvetica, Arial, sans-serif;
+    font: 300 16px/1.8 -apple-system, "Helvetica Neue", helvetica, Arial, sans-serif;
     color: #bbb;
 }
 
@@ -660,7 +660,7 @@ h1.archive {
 
 h2.month {
     width: 100%;
-    font: bold 13px/1 "Helvetica Neue", helvetica, Arial, sans-serif;
+    font: bold 13px/1 -apple-system, "Helvetica Neue", helvetica, Arial, sans-serif;
     text-transform: uppercase;
     margin-top: 40px;
     margin-bottom: 10px;
@@ -674,7 +674,7 @@ h2.month {
 
 #archive-list a {
     display: block;
-    font: bold 17px/1.7 "Helvetica Neue", helvetica, Arial, sans-serif;
+    font: bold 17px/1.7 -apple-system, "Helvetica Neue", helvetica, Arial, sans-serif;
     color: #333;
 }
 
@@ -682,7 +682,7 @@ h2.month {
     float: right;
     position: relative;
     top: 1px;
-    font: 300 17px/1.7 "Helvetica Neue", helvetica, Arial, sans-serif;
+    font: 300 17px/1.7 -apple-system, "Helvetica Neue", helvetica, Arial, sans-serif;
     color: #bbb;
 }
 
@@ -707,12 +707,12 @@ h2.month {
     margin-bottom: 0px;
 }
 #post-list.archive.readmore h3 {
-    font: 400 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 400 20px -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin-bottom: 30px;
 }
 
 #post-list.archive.readmore a {
-    font: 400 16px/1.6 "Helvetica Neue", helvetica, Arial, sans-serif;
+    font: 400 16px/1.6 -apple-system, "Helvetica Neue", helvetica, Arial, sans-serif;
     color: #5694f1;
 }
 
@@ -721,7 +721,7 @@ h2.month {
 }
 
 #post-list.archive.readmore .dates {
-    font: 300 16px/1.6 "Helvetica Neue", helvetica, Arial, sans-serif;
+    font: 300 16px/1.6 -apple-system, "Helvetica Neue", helvetica, Arial, sans-serif;
 }
 
 #disqus_thread, #ds-thread {
