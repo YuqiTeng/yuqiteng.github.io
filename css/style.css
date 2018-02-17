@@ -164,7 +164,7 @@ h2 {
 .profile h2 {
     font-size: 14px;
     font-weight: 300;
-    color: #5badf0;
+    color: #4fc08d;
     margin-top: 10px;
     font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-style: normal;
@@ -207,7 +207,7 @@ nav.main-nav a.cta {
       top: 8px;
       right: 6px;
       padding: 8px 8px;
-      color: #5badf0;
+      color: #4fc08d;
       font-size: 13px;
       line-height: 1.35;
       border-radius: 3px;
@@ -246,12 +246,12 @@ nav.main-nav a.cta {
 
 a, #title, #post-list a:hover, #title:hover {
     text-decoration: none;
-    color: #5badf0;
-    color: #5694f1;
+    color: #4fc08d;
+    color: #4fc08d;
 }
 
 p a {
-    color: #5694f1;
+    color: #4fc08d;
 }
 
 
@@ -528,9 +528,9 @@ Post List
 }
 
 #archive-link:hover {
-    background: #5694f1;
+    background: #4fc08d;
     color: #fff;
-    box-shadow: 0 0 0 1px #5694f1;
+    box-shadow: 0 0 0 1px #4fc08d;
 }
 
 #archive-link span {
@@ -713,7 +713,7 @@ h2.month {
 
 #post-list.archive.readmore a {
     font: 400 16px/1.6 -apple-system, "Helvetica Neue", helvetica, Arial, sans-serif;
-    color: #5694f1;
+    color: #4fc08d;
 }
 
 #post-list.archive.readmore a:hover {
@@ -733,7 +733,7 @@ h2.month {
 }
 
 #sharing a.twitter {
-    background: #4fafed;
+    background: #4fc08d;
 }
 
 #sharing a {
@@ -824,11 +824,11 @@ h2.month {
 }
 
 .archive .post-item:hover {
-    color: #5694f1;
+    color: #4fc08d;
     transition: 0.3s ease-out;
 }
 .archive .post-item:hover .post-link {
-    color: #5694f1;
+    color: #4fc08d;
 }
 
 .fa.fa-heart:hover {
@@ -931,5 +931,5 @@ a.symbol:hover {
     font-size: .9em;
 }
 .page-tags ul li a:hover {
-    color: #5694f1;
+    color: #4fc08d;
 }
