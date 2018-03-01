@@ -189,6 +189,10 @@ nav.main-nav a {
     border-radius: 3px;
 }
 
+nav.main-nav a:hover {
+    color: #386426;
+}
+
 nav.main-nav a.cta {
     background: #4fc08d;
     color: #fff;
