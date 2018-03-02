@@ -152,6 +152,11 @@ h2 {
     height: 80px;
     border-radius: 50%;
     margin-bottom: 20px;
+    animation: App-logo-spin infinite 20s linear;
+}
+@keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 .profile h1 {
