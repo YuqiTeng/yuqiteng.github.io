@@ -229,13 +229,13 @@ nav.main-nav a.cta {
 }
 
 #wrapper {
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto;
     padding: 60px 20px 100px 20px;
 }
 
 #wrapper.home {
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto;
     padding: 0px 20px 20px 20px;
 }
