@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on A Walnut.</title>
+    <title>A Walnut.</title>
     <link>https://yuqiteng.github.io/categories/</link>
-    <description>Recent content in Categories on A Walnut.</description>
+    <description>Recent content on A Walnut.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 15 Jan 2018 18:01:56 +0900</lastBuildDate>
@@ -12,25 +12,21 @@
     
     
     <item>
-      <title></title>
-      <link>https://yuqiteng.github.io/categories/</link>
+      <title>Moving to New Platform</title>
+      <link>https://yuqiteng.github.io/posts/moving-to-new-platform/</link>
       <pubDate>Mon, 15 Jan 2018 18:01:56 +0900</pubDate>
       
-      <guid>https://yuqiteng.github.io/categories/</guid>
-      <description></description>
+      <guid>https://yuqiteng.github.io/posts/moving-to-new-platform/</guid>
+      <description>Again Hugo.</description>
     </item>
     
     <item>
-      <title>Reading Notes</title>
-      <link>https://yuqiteng.github.io/categories/reading-notes/</link>
-      <pubDate>Thu, 01 Mar 2018 22:00:26 +0800</pubDate>
+      <title>A Perl Problem</title>
+      <link>https://yuqiteng.github.io/posts/a-perl-problem/a-perl-problem/</link>
+      <pubDate>Mon, 04 Jan 2016 00:00:00 +0800</pubDate>
       
-      <guid>https://yuqiteng.github.io/categories/reading-notes/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
-</rss><description>&lt;p&gt;前阵寝室的生物学博士来找我，问我会不会编程，我说还好啊，要看什么语言了，有的语言也不熟悉，他说其实很简单的，就是处理一些数据。
+      <guid>https://yuqiteng.github.io/posts/a-perl-problem/a-perl-problem/</guid>
+      <description>&lt;p&gt;前阵寝室的生物学博士来找我，问我会不会编程，我说还好啊，要看什么语言了，有的语言也不熟悉，他说其实很简单的，就是处理一些数据。
 
 需求是这样的：&lt;/p&gt;</description>
     </item>
