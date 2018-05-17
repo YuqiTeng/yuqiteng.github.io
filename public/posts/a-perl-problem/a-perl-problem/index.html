@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 
+			
+  
+    <meta name="twitter:card" content="summary"/>
+    
+      <meta name="twitter:image" content="https://yuqiteng.github.io/images/avatar.png" />
+    
+  
+  
+  <meta name="twitter:title" content="A Perl Problem"/>
+  <meta name="twitter:description" content="前阵寝室的生物学博士来找我，问我会不会编程，我说还好啊，要看什么语言了，有的语言也不熟悉，他说其实很简单的，就是处理一些数据。
+
+需求是这样的："/>
+  
+  
+  
+  
+    <meta name="twitter:creator" content="@Yuqi"/>
+  
+
+
+
+		
+		<meta name="author" content="Yuqi">
+		<meta name="description" content="A blog held by Yuqi">
+		<meta name="generator" content="Hugo 0.36.1" />
+		<title>A Perl Problem &middot; A Walnut.</title>
+		<link rel="shortcut icon" href="https://yuqiteng.github.io/images/favicon.ico">
+		<link rel="stylesheet" href="https://yuqiteng.github.io/css/style.css">
+		<link rel="stylesheet" href="https://yuqiteng.github.io/css/highlight.css">
+        <link href="https://fonts.googleapis.com/css?family=Monda:400,700" rel="stylesheet">
+
+		
+		<link rel="stylesheet" href="https://yuqiteng.github.io/css/font-awesome.min.css">
+		
+
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://yuqiteng.github.io/'> <span class="arrow">←</span>Home</a>
+	
+	<a href='https://yuqiteng.github.io/posts'>Archive</a>
+	<a href='https://yuqiteng.github.io/tags'>Tags</a>
+	<a href='https://yuqiteng.github.io/about'>About</a>
+
+	
+
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        A Perl Problem
+                    </h1>
+                    <h2 class="headline">
+                    Jan 4, 2016 00:00
+                    · 97 words
+                    · 1 minute read
+                      <span class="tags">
+                      
+                      
+                          
+                              <a href="https://yuqiteng.github.io/tags/code">code</a>
+                              <span>·</span>
+                          
+                      
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                  
+                    <div id="toc">
+                      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#大概思路及收获">大概思路及收获</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+                    </div>
+                  
+                
+                <section id="post-body">
+                    <p>前阵寝室的生物学博士来找我，问我会不会编程，我说还好啊，要看什么语言了，有的语言也不熟悉，他说其实很简单的，就是处理一些数据。
+
+需求是这样的：</p>
+
+<ol>
+<li>要取出所有 x:x 类型的数据</li>
+<li>不取 0:x 或者 x:0 这样的数据</li>
+<li>计数</li>
+</ol>
+
+<p>看到 1 和 2 首先想到的肯定是正则表达式了，我想这其实也不难，用 python 几行也就写了，实在不行上网找一个处理字符串的程序改一改也就ok了，然而博士说要用 perl 写，顿时慌了，perl 只闻其名未见其人&hellip;但是据说是一种具有各种功能的脚本语言，很重要的一点是内部集成<b>正则表达式</b>。虽然没接触过，硬着头皮上，只能简单学一下了，毕竟浓浓室友情。最后搞了俩小时搞出来了，得到的程序是这样的：</p>
+
+<pre><code class="language-perl">#!/usr/bin/perl
+
+use strict;
+use warnings;
+my $filename_in = $ARGV[0];     #chicken_SNPs.txt
+my $filename_out = $ARGV[1];
+open(IN,$filename_in);
+open(OUT,&quot;&gt;$filename_out&quot;);
+
+my @head;
+my %hash;
+my $popname;
+my @array;
+
+while(&lt;IN&gt;){
+chomp;
+	if($_=~/^chr/){
+		@head=split(/\t/,$_);
+	}else{
+		@array=split(/\t/,$_);
+		for (my $a=5;$a&lt;15;$a++){
+			$popname=$1 if($head[$a]=~/pop(\S+)/);
+			push @{$hash{$popname}},$array[$a];
+		}
+	}
+}
+
+
+my %hash2;
+foreach my $pop (keys %hash){
+	for my $data (@{$hash{$pop}}){
+		if($data!~/0\:/ and $data!~/\:0/){
+			$hash2{$pop}++;
+		}
+	}
+}
+
+foreach my $pop (sort {$a &lt;=&gt; $b} keys %hash2){
+	print OUT &quot;pop$pop\t$hash2{$pop}\n&quot;;
+}
+
+</code></pre>
+
+<h3 id="大概思路及收获">大概思路及收获</h3>
+
+<p><strong>思路</strong></p>
+
+<p>对于这种处理文件的问题，首先当然是读文件，而如何读，读到哪，读取哪些部分就成了我们要考虑的问题，对于我们要解决的问题，大概方法就是</p>
+
+<blockquote>
+<p>按行读，去掉tab，取相关的字符串</p>
+</blockquote>
+
+<p>所以首先需要变量去存取读出来的字符串，在我们的程序中是“@array”和“@head”，而“@head”是第一行的内容，用以区分数据列，此步完成了需求1。存储结束后便要对取出的字符串进行筛选，这一步便是为了完成需求2。对于匹配字符串的需求首选是正则表达式而perl语言内部就集成了对正则表达式的支持，这就让这一步变得更加容易。</p>
+                </section>
+            </article>
+
+            
+
+            
+                <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'yuqiteng'; 
+
+     
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="">
+        <i class="fa fa-facebook-square"></i>
+    </a>
+    
+    <a class="symbol" href="">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/yuqisd">
+        <i class="fa fa-twitter-square"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2018 <i class="fa fa-heart" aria-hidden="true"></i> Yuqi
+    
+    </p>
+    <p class="small">
+        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://yuqiteng.github.io/js/jquery-2.2.4.min.js"></script>
+<script src="https://yuqiteng.github.io/js/main.js"></script>
+<script src="https://yuqiteng.github.io/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+  
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'your_google_analytics_id', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+    </body>
+</html>
