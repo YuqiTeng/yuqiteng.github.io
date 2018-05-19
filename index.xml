@@ -53,5 +53,16 @@
 需求是这样的：&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>Add Fonts to Your Webpages</title>
+      <link>https://yuqiteng.github.io/posts/add-fonts-to-your-webpages/</link>
+      <pubDate>Mon, 17 Aug 2015 11:04:05 +0900</pubDate>
+      
+      <guid>https://yuqiteng.github.io/posts/add-fonts-to-your-webpages/</guid>
+      <description>&lt;p&gt;Instead of loading fonts from local fonts library, fonts can also be provided by online fonts service.
+
+Today I want to recommend the &lt;b&gt;Google Fonts API&lt;/b&gt;.&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>

@@ -23,6 +23,11 @@
   </url>
   
   <url>
+    <loc>https://yuqiteng.github.io/posts/add-fonts-to-your-webpages/</loc>
+    <lastmod>2015-08-17T11:04:05+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yuqiteng.github.io/categories/</loc>
     <lastmod>2018-01-15T18:01:56+09:00</lastmod>
     <priority>0</priority>
@@ -83,6 +88,12 @@
   <url>
     <loc>https://yuqiteng.github.io/tags/</loc>
     <lastmod>2016-01-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yuqiteng.github.io/tags/ui/</loc>
+    <lastmod>2015-08-17T11:04:05+09:00</lastmod>
     <priority>0</priority>
   </url>
   
