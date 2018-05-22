@@ -43,7 +43,7 @@ draft = false
 
 仿照着作者提出的方法（据说是他22年来的经验），尝试着阅读了一下最近要介绍的论文，进行完第一步与第二步的时候，果真对文章的骨干有了一定的理解（当然也花了很久去查不懂的专业名词），并且可以大概理解文中作者要做什么，怎么做。所以说这个 three-pass 方法还是挺有效的:-)，并且我觉得在做 PPT 时好像也可以仿照着这个用相反的思维来完成 PPT 的骨干部分，虽然还没试过...总之觉得是个很好的方法，推荐。
 
-# Reference
+### Reference
 
 <a href="http://ccr.sigcomm.org/online/files/p83-keshavA.pdf">How to Read a Paper 原文</a>
 
