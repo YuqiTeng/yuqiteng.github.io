@@ -43,6 +43,27 @@
     </item>
     
     <item>
+      <title>How to Read a Paper</title>
+      <link>https://yuqiteng.github.io/posts/how-to-read-a-paper/</link>
+      <pubDate>Thu, 14 Apr 2016 22:48:42 +0900</pubDate>
+      
+      <guid>https://yuqiteng.github.io/posts/how-to-read-a-paper/</guid>
+      <description>&lt;p&gt;由于最近要阅读论文作发表，而且是入学以来的第一篇论文，所以想要寻求一些高效的阅读方法，进行一定的阅读训练，为以后的阅读做一下准备。在知乎上找了一下有关“阅读论文”的提问，发现有一解答引出一篇论文《How to Read a Paper》，打印出来看了一下，着实不错，故在此对其内容进行以下总结以及写下实际运用心得。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>研究生阶段总结</title>
+      <link>https://yuqiteng.github.io/posts/%E7%A0%94%E7%A9%B6%E7%94%9F%E9%98%B6%E6%AE%B5%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sun, 13 Mar 2016 20:33:12 +0900</pubDate>
+      
+      <guid>https://yuqiteng.github.io/posts/%E7%A0%94%E7%A9%B6%E7%94%9F%E9%98%B6%E6%AE%B5%E6%80%BB%E7%BB%93/</guid>
+      <description>&lt;p&gt;3月7日收到了大学院入学考试的结果，成功考过入学考试，4月份开始就是修士了，故总结一下这
+半年的研究生生活，顺便也给后辈留下点经验。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>A Perl Problem</title>
       <link>https://yuqiteng.github.io/posts/a-perl-problem/a-perl-problem/</link>
       <pubDate>Mon, 04 Jan 2016 00:00:00 +0900</pubDate>
@@ -51,6 +72,17 @@
       <description>&lt;p&gt;前阵寝室的生物学博士来找我，问我会不会编程，我说还好啊，要看什么语言了，有的语言也不熟悉，他说其实很简单的，就是处理一些数据。
 
 需求是这样的：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Add Fonts to Your Webpages</title>
+      <link>https://yuqiteng.github.io/posts/add-fonts-to-your-webpages/</link>
+      <pubDate>Mon, 17 Aug 2015 11:04:05 +0900</pubDate>
+      
+      <guid>https://yuqiteng.github.io/posts/add-fonts-to-your-webpages/</guid>
+      <description>&lt;p&gt;Instead of loading fonts from local fonts library, fonts can also be provided by online fonts service.
+
+Today I want to recommend the &lt;b&gt;Google Fonts API&lt;/b&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>
