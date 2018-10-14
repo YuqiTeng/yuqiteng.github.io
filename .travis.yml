@@ -15,7 +15,7 @@ install:
 
 script:
     - hugo
-    - echo 'yuqiteng.github.io' > public/CNAME
+      #- echo 'yuqiteng.github.io' > public/CNAME
 
 deploy:
   provider: pages
