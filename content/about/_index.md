@@ -7,13 +7,19 @@ My colleagues call me Luke, which is chosen by me from "Luke Skywalker" in the f
 I'm a backend engineer who can also do some SRE (site reliability engineering) stuff.
 Here's my skill stack:
 
-- **Programming Language:** Golang (Web development), PHP (Web development), Python (Data analysis)
-- **OS & virtualization:** Unix/Linux, Docker
-- **Orchestration:** Docker swarm, Kubernetes
-- **Automation tools:** Jenkins
-- **Development methodology:** Agile, Test Driven Development (TDD)
-- **Software architecture:** Microservice architecture
-- **Academic field:** Data analysis with Pandas+Jupyter, Machine learning algorithms, HPC job scheduling algorithms
+- **Programming Language:** Golang (Web development), PHP (Web development), Python (Data analysis)  
+ 
+- **OS & virtualization:** Unix/Linux, Docker  
+ 
+- **Orchestration:** Docker swarm, Kubernetes  
+ 
+- **Automation tools:** Jenkins  
+ 
+- **Development methodology:** Agile, Test Driven Development (TDD)  
+ 
+- **Software architecture:** Microservice architecture  
+ 
+- **Academic field:** Data analysis with Pandas+Jupyter, Machine learning algorithms, HPC job scheduling algorithms  
 
 ### In this blog
 
