@@ -1,7 +1,7 @@
 # Site settings
 baseurl = "https://yuqiteng.github.io/"
 languageCode = "en"
-title = "A Walnut."
+title = "Walnut"
 theme = "hugo-theme-cactus-plus"
 googleAnalytics = "your_google_analytics_id"
 # Set the value to true if your site include CJK (Chinese, Japanese, and Korean languages) characters
@@ -10,7 +10,7 @@ hasCJKLanguage = false
 [params]
 	author = "Yuqi"
 	description = "A blog held by Yuqi"
-	bio = "Create no evil, cultivate all good, and purify the mind."
+	bio = "I am a walnut, who sometimes code."
 
 	twitter = ""
 	facebook = ""
