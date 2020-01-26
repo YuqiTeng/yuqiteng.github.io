@@ -29,7 +29,7 @@ met during daily work, write down my ideas&thoughts about what's going on in the
 ### You can find me from
 
 LinkedIn: [Yuqi Teng](https://www.linkedin.com/in/yuqi-teng/)  
-Email: mkdirteng@outlook.com
+Email: mkdirtengAToutlook.com
 
 
 
